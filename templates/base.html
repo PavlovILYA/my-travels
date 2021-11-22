@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang=ru>
+<head>
+    <title>{% block title %}{% endblock %}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+
+</head>
+<body>
+    <div class="container d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+        <img src="https://image.freepik.com/free-vector/travel-linear-icons_1257-236.jpg" width="100" height="100" alt="альтернативный текст">
+            <span class="fs-1"><b>Мои путешествия</b></span>
+      </a>
+
+      <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+        <a class="me-3 py-2 text-dark text-decoration-none" href="/">Главная</a>
+          <a class="me-3 py-2 text-dark text-decoration-none" href="/travels">Путешествия</a>
+        <a class="me-3 py-2 text-dark text-decoration-none" href="/about">О нас</a>
+          <a class="btn btn-warning" href="/create-travel">Создать путешествие</a>
+      </nav>
+    </div>
+    {% block body %}{% endblock %}
+    <footer class="container pt-4 my-md-5 pt-md-5 border-top">
+        <div class="row">
+          <div class="col-12 col-md">
+            <small class="d-block mb-3 text-muted">© 2021</small>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Для мотивации</h5>
+            <ul class="list-unstyled text-small">
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="https://www.youtube.com/watch?v=AbT5zZaa7EI">Рорайма (Бондарев)</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="https://www.youtube.com/watch?v=wb84vvYSPEU">Исландия (Птушкин)</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="https://www.youtube.com/watch?v=hMPMUDydTtQ">Канада (Птушкин)</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="https://www.youtube.com/watch?v=InjQ-Cqm894">США (Бондарев)</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="https://www.youtube.com/watch?v=nTbXOEHYzDI">Панама (Бондарев)</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="https://www.youtube.com/watch?v=4G5wPKKZdZw&list=LL&index=104&t=180s">Рецепт каши из топора</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>О нас</h5>
+            <ul class="list-unstyled text-small">
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Павлов Илья</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="/about">О нас</a></li>
+            </ul>
+          </div>
+        </div>
+    </footer>
+</body>
+</html>

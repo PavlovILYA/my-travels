@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ travel.title }}
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <h1> {{ travel.title }} </h1>
+    <div class="alert alert-info">
+        <p>{{ travel.route }}</p>
+        <p>{{ travel.description }}</p>
+        <p>{{ travel.status }}</p>
+        <p><b>Автор: {{ travel.author }}</b></p>
+        <p><b>Дата создания: {{ travel.date.date() }}</b></p>
+        <a href="/travels/{{ travel.id }}/delete" class="btn btn-danger">Удалить</a>
+        <a href="/travels/{{ travel.id }}/update" class="btn btn-success">Редактировать</a>
+    </div>
+</div>
+{% endblock %}

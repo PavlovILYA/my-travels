@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Путешествия
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <h1> Список желаемых или уже реализованных путешествий </h1>
+
+    {% if travels|length > 0 %}
+        {% for el in travels %}
+        <div class="alert alert-info">
+            <h2>{{ el.title }}</h2>
+            <p>{{ el.status }}</p>
+            <p><b>Автор: {{ el.author }}</b></p>
+            <p><b>Дата создания: {{ el.date.date() }}</b></p>
+            <a href="/travels/{{ el.id }}" class="btn btn-warning">Детальнее</a>
+        </div>
+        {% endfor %}
+    {% else %}
+    <p>Пока еще нет путешествий :(</p>
+    {% endif %}
+</div>
+{% endblock %}
