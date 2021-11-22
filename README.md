@@ -1,1 +1,6 @@
-# You can see the working web service running on heroku: https://flask-travel.herokuapp.com
+# You can see the working web service running on heroku: 
+https://flask-travel.herokuapp.com
+
+ '''
+ Общедоступный ресурс, предназначенный для сбора идей, которые могут воплотиться в новые путешествия. Если ты уже осуществил невероятное приключение, либо планируешь сделать это в ближайшем будущем, создавай запись здесь и мотивируй других!
+ '''
